@@ -1,0 +1,6 @@
+# Netlify 部署配置
+# 静态页面：仓库根目录（index.html 落地页）
+# Edge Functions：netlify/edge-functions/ 目录自动加载，路由在 proxy.mjs 内声明
+
+[build]
+  publish = "."
