@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deno API Proxy</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+         background: #0d1117; color: #c9d1d9; display: flex; min-height: 100vh; align-items: center; justify-content: center; }
+  main { max-width: 44rem; padding: 2rem; line-height: 1.7; }
+  h1 { font-size: 1.4rem; }
+  code, pre { background: #161b22; border: 1px solid #30363d; border-radius: 6px; }
+  code { padding: .1em .35em; }
+  pre { padding: 1rem; overflow-x: auto; font-size: .82rem; }
+  .ok { color: #3fb950; }
+  a { color: #58a6ff; }
+</style>
+</head>
+<body>
+<main>
+  <h1><span class="ok">●</span> Proxy is Running</h1>
+  <p>用法：<code>https://&lt;域名&gt;/proxy/&lt;目标域名&gt;/&lt;路径&gt;</code></p>
+  <pre>https://YOUR-DOMAIN/proxy/api.openai.com/v1/chat/completions
+https://YOUR-DOMAIN/proxy/api.anthropic.com/v1/messages
+https://YOUR-DOMAIN/proxy/api.groq.com/v1/chat/completions</pre>
+  <p>来源：<a href="https://github.com/tech-shrimp/deno-api-proxy">github.com/tech-shrimp/deno-api-proxy</a></p>
+</main>
+</body>
+</html>
